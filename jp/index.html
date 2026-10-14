@@ -151,6 +151,7 @@ footer{margin-top:48px;padding:20px 0 40px;border-top:1px solid var(--line);font
 
 <nav class="top" aria-label="섹션 이동">
   <div class="wrap">
+    <a href="#vjw">입국 등록</a>
     <a href="#schedule">일정</a>
     <a href="#flight">항공</a>
     <a href="#hotel">숙소</a>
@@ -177,6 +178,59 @@ footer{margin-top:48px;padding:20px 0 40px;border-top:1px solid var(--line);font
     <div class="key"><div class="k">출국</div><div class="v">10/20 KE2101</div><div class="s">김포 09:00 → 하네다 11:20</div></div>
   </div>
 </header>
+
+<!-- VJW -->
+<section id="vjw">
+  <div class="sec-h"><span class="n">필수</span><h2>출국 전 Visit Japan Web 등록</h2><span class="aside">무료 · 1인당 약 10분 · 10/19까지 완료</span></div>
+  <div class="callout" style="margin-top:0"><b>왜 해야 하나요?</b> · 입국심사와 세관 신고를 미리 해두면 하네다에서 <b>QR 하나</b>로 통과합니다. 안 하면 종이 신고서를 현장에서 따로 써야 합니다.</div>
+  <div class="btns">
+    <a class="btn" href="https://www.vjw.digital.go.jp/" target="_blank" rel="noopener">등록 시작하기</a>
+    <a class="btn ghost" href="https://services.digital.go.jp/ko/visit-japan-web/" target="_blank" rel="noopener">공식 안내 (한국어)</a>
+  </div>
+  <p class="note">유료 대행 사이트·앱은 이용하지 마세요. 카드 정보를 요구하면 가짜입니다.</p>
+
+  <h3>등록 순서</h3>
+  <ol class="steps">
+    <li><b>계정 만들기</b> <div class="ln">이메일로 가입 → 인증 메일 확인 → 로그인</div></li>
+    <li><b>본인 정보</b> <div class="ln">여권을 카메라로 스캔하거나 직접 입력</div></li>
+    <li><b>입국·귀국 예정 등록</b> <div class="ln">「신규 등록」 → 아래 표의 기본 정보 · 체류지 입력</div></li>
+    <li><b>외국인 입국기록 · 세관 신고</b> <div class="ln">질문에 모두 사실대로 답변 (대부분 「아니요」)</div></li>
+    <li><b>QR 코드 저장</b> <div class="ln">입국심사·세관 공용 QR 하나 · 스크린샷 저장, 정보 수정하면 다시 저장</div></li>
+  </ol>
+
+  <h3>입력값 (그대로 쓰시면 됩니다)</h3>
+  <div class="tbl-box">
+    <table class="tbl">
+      <thead><tr><th style="width:38%">항목</th><th>입력</th></tr></thead>
+      <tbody>
+        <tr><td colspan="2" style="background:var(--soft);font-weight:600;color:var(--ink)">기본 정보</td></tr>
+        <tr><td>직업</td><td class="strong">회사원</td></tr>
+        <tr><td>현주소 · 국가명 / 도시명</td><td class="strong">SOUTH KOREA / 본인 거주 도시 <span style="font-weight:400;color:var(--muted)">(예: SEOUL, SEONGNAM)</span></td></tr>
+        <tr><td>입국일자</td><td class="strong">2026/10/20</td></tr>
+        <tr><td>탑승기편명</td><td class="strong">KE2101</td></tr>
+        <tr><td>출발지</td><td class="strong">SEOUL</td></tr>
+        <tr><td>동반가족</td><td class="strong">모두 0명</td></tr>
+        <tr><td colspan="2" style="background:var(--soft);font-weight:600;color:var(--ink)">일본 내 연락처 (체류지)</td></tr>
+        <tr><td>우편번호</td><td class="strong">1608336</td></tr>
+        <tr><td>도도부현</td><td class="strong">TOKYO TO</td></tr>
+        <tr><td>시구정촌명</td><td class="strong">SHINJUKU KU</td></tr>
+        <tr><td>이후의 주소</td><td class="strong">3 CHOME-2-9 NISHISHINJUKU</td></tr>
+        <tr><td>체류지 · 호텔명</td><td class="strong">SHINJUKU WASHINGTON HOTEL MAIN</td></tr>
+        <tr><td>전화번호</td><td class="strong">본인 휴대폰 <span style="font-weight:400;color:var(--muted)">(82 + 맨 앞 0 뺀 번호, 예: 8210XXXXXXXX)</span></td></tr>
+        <tr><td colspan="2" style="background:var(--soft);font-weight:600;color:var(--ink)">외국인 입국기록</td></tr>
+        <tr><td>도항 목적</td><td class="strong">상용</td></tr>
+        <tr><td>일본 체재 예정 기간</td><td class="strong">대표님 <b>4일</b> · 부사장님 · 김현정 <b>5일</b> <span style="font-weight:400;color:var(--muted)">(0년 0개월 N일)</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>하네다 도착 후</h3>
+  <ol class="steps">
+    <li>입국심사 구역의 <b>키오스크</b>에서 QR 코드와 여권 스캔</li>
+    <li>키오스크 이용자 전용 부스에서 입국심사</li>
+    <li>짐 찾기 → 세관은 키오스크 화면 안내대로 (전자 세관 단말기에 QR 제시)</li>
+  </ol>
+</section>
 
 <!-- 01 일정 -->
 <section id="schedule">
@@ -422,7 +476,6 @@ footer{margin-top:48px;padding:20px 0 40px;border-top:1px solid var(--line);font
         <tr><td class="strong">10/22 교류회</td><td>일본어로 진행되며 별도 통역은 없습니다. 번역 앱을 준비해 주세요. Japan IT Week 입장 사전등록 완료.</td></tr>
         <tr><td class="strong">부스 인원</td><td>통역사 없이 운영합니다. 부사장님은 10/21 첫날과 10/23 마지막 날 함께하시며(비지터 등록 완료), 대표님은 부스 근무가 없습니다.</td></tr>
         <tr><td class="strong">수하물 협조</td><td>전시 물품(약 16kg)을 3인이 나누어 갑니다. 1인당 5kg 내외 박스 1개를 캐리어에 담아 주세요.</td></tr>
-        <tr><td class="strong">입국 준비</td><td>출국 전 <a href="https://www.vjw.digital.go.jp/" target="_blank" rel="noopener">Visit Japan Web</a>에 입국심사 · 세관 신고를 등록해 두면 하네다에서 QR로 빠르게 통과합니다.</td></tr>
         <tr><td class="strong">현지 문의처</td><td><b>K-FAIRS 김경훈 매니저</b> (전시 전반 · 도시락) · <a href="tel:+827042866792">070-4286-6792</a> · <a href="mailto:khkim@kfairs.com">khkim@kfairs.com</a><br><b>DAYZ 히라노</b> (부스 시공 · 그래픽) · <a href="mailto:security_days@dayz-inc.com">security_days@dayz-inc.com</a></td></tr>
         <tr><td class="strong">교통카드</td><td>일괄 지급하는 교통카드(2,000엔 충전) 하나로 JR · 지하철 모두 이용 가능합니다. 잔액이 부족하면 역 발매기에서 충전해 주세요.</td></tr>
       </tbody>
