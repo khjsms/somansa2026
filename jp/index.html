@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>도쿄 출장 가이드 · Security Days Fall 2026</title>
+<meta name="description" content="소만사 Security Days Fall 2026 Tokyo 출장 가이드 — 일정, 항공, 숙소, 부스 B11, 도시락, 이동 동선">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#3a74c4; --accent-ink:#2a5a9e; --ink:#2f3033; --body:#45464a; --muted:#6a6c72;
+  --line:#d9e0ea; --soft:#f3f6fa; --sky:#e3f0fb; --lilac:#ece9f8; --bg:#ffffff; --warn:#b4541a; --warn-bg:#fdf1e8;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--body);font-family:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:16px;line-height:1.65;-webkit-text-size-adjust:100%}
+.jp{font-family:'Noto Sans JP','Noto Sans KR',sans-serif}
+a{color:var(--accent-ink)}
+h1,h2,h3{color:var(--ink);margin:0;letter-spacing:-0.01em}
+.wrap{max-width:920px;margin:0 auto;padding:0 16px}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding-top:8px;padding-bottom:8px}
+nav.top .wrap::-webkit-scrollbar{display:none}
+nav.top a{flex:none;text-decoration:none;color:var(--body);font-size:14px;font-weight:500;padding:8px 12px;border-radius:999px;white-space:nowrap}
+nav.top a:hover{background:var(--soft);color:var(--ink)}
+
+/* hero */
+header.hero{padding:40px 0 28px;border-bottom:2px solid var(--accent)}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--accent)}
+header.hero h1{font-size:clamp(28px,6vw,40px);line-height:1.25;margin:8px 0 8px;font-weight:700}
+header.hero p{margin:0;color:var(--muted)}
+.keys{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-top:24px}
+.key{background:var(--soft);border-radius:10px;padding:14px 16px}
+.key .k{font-size:13px;color:var(--muted);font-weight:500}
+.key .v{font-size:20px;font-weight:700;color:var(--ink);line-height:1.35}
+.key .s{font-size:13.5px;color:var(--muted)}
+.key.hl{background:var(--accent);}
+.key.hl .k,.key.hl .s{color:#e6eefa}.key.hl .v{color:#fff;font-size:26px}
+
+section{padding:40px 0 8px}
+.sec-h{display:flex;align-items:baseline;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+.sec-h .n{color:var(--accent);font-weight:700;font-size:15px}
+.sec-h h2{font-size:22px;font-weight:700}
+.sec-h .aside{margin-left:auto;font-size:13.5px;color:var(--muted)}
+h3{font-size:17px;font-weight:700;margin:20px 0 10px}
+
+/* overview list */
+.days{border-top:1px solid var(--ink)}
+.day{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:10px 4px;border-bottom:1px solid var(--line);align-items:baseline}
+.day b{font-size:18px;color:var(--ink)}
+.day small{font-size:13px;color:var(--muted);margin-left:4px}
+
+/* detailed schedule */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.tabs button{font:inherit;font-size:14px;font-weight:600;border:1px solid var(--line);background:#fff;color:var(--body);padding:10px 14px;border-radius:8px;cursor:pointer;min-height:44px}
+.tabs button[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.panel[hidden]{display:none}
+.ev{display:grid;grid-template-columns:118px 1fr;gap:4px 14px;padding:12px 10px;border-bottom:1px solid var(--line)}
+.ev.joint{background:#e8f0fb}
+.ev .t{font-weight:600;color:var(--ink);white-space:nowrap;font-size:15px}
+.ev .what b{color:var(--ink)}
+.ev .meta{font-size:14px;color:var(--muted)}
+.ev .who{display:inline-block;font-size:12.5px;font-weight:600;background:#fff;border:1px solid var(--line);border-radius:999px;padding:1px 9px;margin-top:4px}
+.legend{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:6px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;background:#e8f0fb;border:1px solid #a9c4ea}
+
+/* tables */
+.tbl{width:100%;border-collapse:collapse;font-size:15px}
+.tbl th{background:var(--soft);font-weight:600;text-align:left;padding:9px 10px;font-size:14px;color:var(--ink)}
+.tbl td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl td.strong{font-weight:700;color:var(--ink)}
+.tbl-box{overflow-x:auto;border-top:1px solid var(--ink)}
+.refs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:14px}
+.ref{border-radius:8px;padding:12px 14px;display:flex;justify-content:space-between;align-items:baseline;gap:8px;background:var(--soft)}
+.ref:nth-child(1){background:var(--sky)}.ref:nth-child(2){background:var(--lilac)}
+.ref span{font-size:14px}
+.ref code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:19px;font-weight:700;letter-spacing:.08em;color:var(--ink)}
+.note{font-size:13.5px;color:var(--muted);margin-top:10px}
+
+/* cards */
+.card{background:var(--soft);border-radius:12px;padding:18px 20px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.card .lab{font-size:13px;font-weight:600;color:var(--accent)}
+.card .ttl{font-size:18px;font-weight:700;color:var(--ink);line-height:1.4}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.btn{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:10px 16px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;font-size:14.5px}
+.btn.ghost{background:#fff;color:var(--accent-ink);border:1px solid #b9cde9}
+.btn svg{width:16px;height:16px}
+
+/* map */
+.mapbox{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-top:14px}
+.mapbox .tabs{padding:10px;margin:0;background:var(--soft);border-bottom:1px solid var(--line)}
+.mapbox iframe{display:block;width:100%;height:360px;border:0}
+
+/* booth */
+.booth{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+@media (max-width:680px){.booth{grid-template-columns:1fr}}
+.booth .big{background:var(--accent);color:#fff;border-radius:12px;padding:20px;display:flex;flex-direction:column;justify-content:center}
+.booth .big .k{font-size:14px;color:#dfe9f8}
+.booth .big .v{font-size:56px;font-weight:700;line-height:1.1;letter-spacing:.02em}
+.booth .big .s{font-size:14px;color:#dfe9f8}
+.chk{list-style:none;margin:0;padding:0}
+.chk li{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line)}
+.chk li:last-child{border-bottom:0}
+.chk svg{flex:none;width:20px;height:20px;margin-top:3px;color:var(--accent)}
+figure{margin:14px 0 0}
+figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:var(--soft)}
+figcaption{font-size:13.5px;color:var(--muted);margin-top:8px}
+
+/* bento */
+.bento{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.bento .day-b{border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.bento .day-b h4{margin:0 0 8px;font-size:16px;color:var(--ink)}
+.bento .day-b h4 span{font-size:13px;font-weight:600;color:var(--accent);margin-left:6px}
+.bento .item{padding:8px 0;border-top:1px dashed var(--line)}
+.bento .item .jp{font-weight:500;color:var(--ink);font-size:15px}
+.bento .item .ko{font-size:13.5px;color:var(--muted)}
+
+/* routes */
+.route{border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:12px}
+.route h3{margin:0 0 4px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.route h3 .tag{font-size:12.5px;font-weight:600;color:var(--accent);background:var(--sky);border-radius:999px;padding:2px 10px}
+.route .sum{font-size:14px;color:var(--muted);margin-bottom:10px}
+.steps{list-style:none;margin:0;padding:0;position:relative}
+.steps li{position:relative;padding:4px 0 10px 26px}
+.steps li::before{content:"";position:absolute;left:6px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.steps li::after{content:"";position:absolute;left:10px;top:22px;bottom:-4px;width:1px;background:#b9cde9}
+.steps li:last-child::after{display:none}
+.steps .ln{font-size:13.5px;color:var(--muted)}
+.alt{font-size:14px;background:var(--soft);border-radius:8px;padding:8px 12px;margin-top:4px}
+
+.callout{background:var(--warn-bg);color:#6b3511;border-radius:10px;padding:12px 16px;font-size:14.5px;margin-top:14px}
+.callout b{color:var(--warn)}
+
+.comp td:nth-child(2){white-space:nowrap}
+footer{margin-top:48px;padding:20px 0 40px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+
+@media (max-width:560px){
+  .ev{grid-template-columns:1fr}
+  .day{grid-template-columns:80px 1fr}
+  .mapbox iframe{height:300px}
+}
+@media print{nav.top,.mapbox,.tabs{display:none}.panel[hidden]{display:block}}
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="섹션 이동">
+  <div class="wrap">
+    <a href="#schedule">일정</a>
+    <a href="#flight">항공</a>
+    <a href="#hotel">숙소</a>
+    <a href="#places">장소·지도</a>
+    <a href="#booth">부스 B11</a>
+    <a href="#lunch">도시락</a>
+    <a href="#rivals">경쟁사 동선</a>
+    <a href="#kit">지급 물품</a>
+    <a href="#notes">참고사항</a>
+    <a href="#routes">이동 동선</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header class="hero">
+  <div class="eyebrow">SECURITY DAYS FALL 2026 · TOKYO</div>
+  <h1>도쿄 출장 가이드</h1>
+  <p>2026. 10. 20(화) – 10. 24(토) · 시큐리티데이즈 전시 및 한일 교류 · 소만사 마케팅팀</p>
+  <div class="keys">
+    <div class="key hl"><div class="k">소만사 부스</div><div class="v">B11</div><div class="s">KISIA 한국관 · AI DLP</div></div>
+    <div class="key"><div class="k">전시장</div><div class="v">TAKANAWA GATEWAY Convention Center</div><div class="s">다카나와게이트웨이역 직결</div></div>
+    <div class="key"><div class="k">숙소</div><div class="v">신주쿠 워싱턴 호텔 메인</div><div class="s">니시신주쿠 · 3객실</div></div>
+    <div class="key"><div class="k">출국</div><div class="v">10/20 KE2101</div><div class="s">김포 09:00 → 하네다 11:20</div></div>
+  </div>
+</header>
+
+<!-- 01 일정 -->
+<section id="schedule">
+  <div class="sec-h"><span class="n">01</span><h2>일정</h2></div>
+
+  <div class="days">
+    <div class="day"><div><b>10/20</b><small>(화)</small></div><div>도쿄 출국 · KISA 세미나 · 부스 설치 · KISIA 시큐리티 나이트</div></div>
+    <div class="day"><div><b>10/21</b><small>(수)</small></div><div>부스 운영 1일차 · 대표님 파이오링크 재팬 방문</div></div>
+    <div class="day"><div><b>10/22</b><small>(목)</small></div><div>부스 운영 2일차 · 한-일 사이버보안 기업 교류회 (마쿠하리 멧세)</div></div>
+    <div class="day"><div><b>10/23</b><small>(금)</small></div><div>부스 운영 3일차 · 대표님 귀국 · 부스 철거</div></div>
+    <div class="day"><div><b>10/24</b><small>(토)</small></div><div>자유 일정 · 부사장님, 김현정 귀국</div></div>
+  </div>
+
+  <h3>일자별 상세</h3>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+    <div class="tabs" role="tablist" aria-label="날짜 선택">
+      <button role="tab" aria-selected="true" aria-controls="d20" id="t20">10/20 화</button>
+      <button role="tab" aria-selected="false" aria-controls="d21" id="t21">10/21 수</button>
+      <button role="tab" aria-selected="false" aria-controls="d22" id="t22">10/22 목</button>
+      <button role="tab" aria-selected="false" aria-controls="d23" id="t23">10/23 금</button>
+      <button role="tab" aria-selected="false" aria-controls="d24" id="t24">10/24 토</button>
+    </div>
+    <span class="legend"><i></i>대표님 · 부사장님 동행 일정</span>
+  </div>
+
+  <div class="panel" id="d20" role="tabpanel" aria-labelledby="t20">
+    <div class="ev joint"><div class="t">09:00 – 11:20</div><div class="what"><b>도쿄 출국</b> · KE2101<div class="meta">김포공항 국제선 → 하네다공항 T3</div><span class="who">전원</span></div></div>
+    <div class="ev joint"><div class="t">13:00 – 15:00</div><div class="what"><b>KISA 세미나 (청강)</b><div class="meta">Strategic Cyber Security Seminar · 오전 1:1 매칭은 불참<br>TKP 가든시티 PREMIUM 도쿄역 오테마치 (오테마치 노무라빌딩 17층)</div><span class="who">대표님 · 부사장님</span></div></div>
+    <div class="ev"><div class="t">15:00 – 18:00</div><div class="what"><b>부스 설치</b><div class="meta">공항에서 전시장 직행 · TAKANAWA GATEWAY Convention Center, 부스 B11</div><span class="who">김현정</span></div></div>
+    <div class="ev"><div class="t">17:00 – 20:00</div><div class="what"><b>KISIA 시큐리티 나이트 (한일 교류회)</b><div class="meta">파이오링크 · 펜타시큐리티 일본 시장 진출 사례 공유 · 약 40명 · 만찬<br>TKP 가든시티 PREMIUM 17층 E홀 (세미나와 같은 층)</div><span class="who">대표님</span></div></div>
+  </div>
+
+  <div class="panel" id="d21" role="tabpanel" aria-labelledby="t21" hidden>
+    <div class="ev"><div class="t">09:00 – 18:00</div><div class="what"><b>부스 운영 1일차</b><div class="meta">TAKANAWA GATEWAY Convention Center · B11 · 도시락 2식</div><span class="who">부사장님 · 김현정</span></div></div>
+    <div class="ev"><div class="t">시간 미정</div><div class="what"><b>파이오링크 재팬 방문</b><div class="meta">㈱パイオリンク · 신주쿠역 앞, 숙소 인근 · 파이오링크 조영철 대표님 동행</div><span class="who">대표님</span></div></div>
+  </div>
+
+  <div class="panel" id="d22" role="tabpanel" aria-labelledby="t22" hidden>
+    <div class="ev"><div class="t">09:00 – 18:00</div><div class="what"><b>부스 운영 2일차</b><div class="meta">TAKANAWA GATEWAY Convention Center · B11 · 도시락 1식</div><span class="who">김현정</span></div></div>
+    <div class="ev joint"><div class="t">15:30 – 18:00</div><div class="what"><b>한-일 사이버보안 기업 교류회</b><div class="meta">Security Connect Tokyo 2026 · 세미나, 기업 피칭, 네트워킹 · 하이테이블 사용 가능<br>마쿠하리 멧세 (치바) · Japan IT Week Autumn 전시장 내</div><span class="who">대표님 · 부사장님</span></div></div>
+  </div>
+
+  <div class="panel" id="d23" role="tabpanel" aria-labelledby="t23" hidden>
+    <div class="ev"><div class="t">09:00 – 18:00</div><div class="what"><b>부스 운영 3일차</b><div class="meta">TAKANAWA GATEWAY Convention Center · B11 · 도시락 2식</div><span class="who">김현정</span></div></div>
+    <div class="ev"><div class="t">12:35 – 14:55</div><div class="what"><b>대표님 귀국</b> · KE2102<div class="meta">하네다공항 T3 → 김포공항 · 파이오링크 대표님과 동일 항공편</div><span class="who">대표님</span></div></div>
+    <div class="ev"><div class="t">~ 19:00</div><div class="what"><b>부스 철거</b><div class="meta">전시 종료 후 반출</div><span class="who">김현정</span></div></div>
+  </div>
+
+  <div class="panel" id="d24" role="tabpanel" aria-labelledby="t24" hidden>
+    <div class="ev"><div class="t">낮</div><div class="what"><b>체크아웃 · 자유 일정</b><div class="meta">짐은 호텔에 맡겨 두고 이동</div></div></div>
+    <div class="ev"><div class="t">19:55 – 22:15</div><div class="what"><b>귀국</b> · KE2104<div class="meta">하네다공항 T3 → 김포공항 · 17:55까지 공항 도착</div><span class="who">부사장님 · 김현정</span></div></div>
+  </div>
+</section>
+
+<!-- 02 항공 -->
+<section id="flight">
+  <div class="sec-h"><span class="n">02</span><h2>항공</h2><span class="aside">대한항공 · 일반석 · 이티켓은 개별 메일 발송</span></div>
+  <div class="tbl-box">
+    <table class="tbl">
+      <thead><tr><th>구분</th><th>편명</th><th>일자</th><th>구간 · 시간 (현지)</th><th>탑승</th></tr></thead>
+      <tbody>
+        <tr><td>가는 편</td><td class="strong">KE2101</td><td>10/20 (화)</td><td>김포 09:00 → 하네다 11:20</td><td>전원</td></tr>
+        <tr><td>오는 편</td><td class="strong">KE2102</td><td>10/23 (금)</td><td>하네다 12:35 → 김포 14:55</td><td>대표님</td></tr>
+        <tr><td>오는 편</td><td class="strong">KE2104</td><td>10/24 (토)</td><td>하네다 19:55 → 김포 22:15</td><td>부사장님 · 김현정</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="refs">
+    <div class="ref"><span>김대환 대표님</span><code>DTR•••</code></div>
+    <div class="ref"><span>임환철 부사장님</span><code>DXS•••</code></div>
+    <div class="ref"><span>김현정 팀장</span><code>FUG•••</code></div>
+  </div>
+  <p class="note">예약번호 전체는 일괄 지급하는 이티켓 출력본에서 확인해 주세요. 김포 국제선 터미널 · 하네다 제3터미널(T3) · 비행시간 2시간 20분 · 출발 2시간 전 공항 도착, 탑승수속 마감은 출발 1시간 전입니다.</p>
+</section>
+
+<!-- 03 숙소 -->
+<section id="hotel">
+  <div class="sec-h"><span class="n">03</span><h2>숙소</h2></div>
+  <div class="card">
+    <div class="lab">HOTEL</div>
+    <div class="ttl">신주쿠 워싱턴 호텔 메인 <span class="jp" style="font-weight:500;font-size:15px;color:var(--muted)">新宿ワシントンホテル本館</span></div>
+    <div style="margin-top:6px">3-2-9 Nishi-Shinjuku, Shinjuku-ku, Tokyo 160-0023</div>
+    <div class="tbl-box" style="margin-top:12px;border-top-color:var(--line)">
+      <table class="tbl">
+        <thead><tr><th>투숙</th><th>체크인</th><th>체크아웃</th><th>객실</th></tr></thead>
+        <tbody>
+          <tr><td class="strong">김대환 대표님</td><td>10/20 (화)</td><td>10/23 (금) · 3박</td><td>슈피리어 트윈룸 · 금연 (리모델링 층)</td></tr>
+          <tr><td class="strong">임환철 부사장님</td><td>10/20 (화)</td><td>10/24 (토) · 4박</td><td>슈피리어 트윈룸 · 금연 (리모델링 층)</td></tr>
+          <tr><td class="strong">김현정 팀장</td><td>10/20 (화)</td><td>10/24 (토) · 4박</td><td>슈피리어 트윈룸 · 금연 (리모델링 층)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note" style="margin-bottom:0">가까운 역: JR 신주쿠역 남쪽 출구 도보 약 8–10분 · 도에이 오에도선 도초마에역 · 마루노우치선 니시신주쿠역. 출구 앞 패밀리마트(신주쿠워싱턴호텔점)가 표지입니다.</p>
+    <div class="btns">
+      <a class="btn" href="https://maps.app.goo.gl/zgeVg4mzB4cmHDJT7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>숙소 위치 열기</a>
+      <a class="btn ghost" href="#places">출장 장소 전체 보기</a>
+    </div>
+  </div>
+</section>
+
+<!-- 04 장소 -->
+<section id="places">
+  <div class="sec-h"><span class="n">04</span><h2>장소 · 지도</h2><span class="aside">핀마다 일정 메모가 달려 있습니다</span></div>
+  <div class="btns" style="margin-top:0;margin-bottom:14px">
+    <a class="btn" href="https://maps.app.goo.gl/nRtZVHwrJUBSNCY16" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>출장 지도 열기 (구글 지도)</a>
+  </div>
+  <div class="grid2">
+    <div class="card"><div class="lab">숙소</div><div class="ttl">신주쿠 워싱턴 호텔</div><div class="meta" style="font-size:14px;color:var(--muted)">신주쿠역 O-2 출구 방면</div><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Shinjuku+Washington+Hotel+Main" target="_blank" rel="noopener">지도</a></div></div>
+    <div class="card" style="background:var(--sky)"><div class="lab">시큐리티데이즈 전시장 · 10/20 – 23</div><div class="ttl">TAKANAWA GATEWAY Convention Center</div><div style="font-size:14px;color:var(--muted)">소만사 부스 B11 · 다카나와게이트웨이역 직결</div><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=TAKANAWA+GATEWAY+Convention+Center" target="_blank" rel="noopener">지도</a></div></div>
+    <div class="card" style="background:var(--sky)"><div class="lab">10/20 · 13:00 – 15:00</div><div class="ttl">오테마치 노무라빌딩 17층</div><div style="font-size:14px;color:var(--muted)">KISA 수출 세미나 · 2-1-1 Ōtemachi, Chiyoda</div><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Otemachi+Nomura+Building" target="_blank" rel="noopener">지도</a></div></div>
+    <div class="card" style="background:var(--sky)"><div class="lab">10/20 · 17:00 – 20:00</div><div class="ttl">오테마치 노무라빌딩 17층 E홀</div><div style="font-size:14px;color:var(--muted)">KISIA 시큐리티 나이트 · 세미나와 같은 층</div><div class="btns"><a class="btn ghost" href="https://maps.app.goo.gl/c6LZd4G2bfV2rQTr6" target="_blank" rel="noopener">지도</a></div></div>
+    <div class="card"><div class="lab">10/21 · 대표님</div><div class="ttl">파이오링크 재팬 <span class="jp" style="font-weight:500;font-size:15px">㈱パイオリンク</span></div><div style="font-size:14px;color:var(--muted)">신주쿠역 앞 · 숙소 인근</div><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=%E3%83%91%E3%82%A4%E3%82%AA%E3%83%AA%E3%83%B3%E3%82%AF+%E6%96%B0%E5%AE%BF" target="_blank" rel="noopener">지도</a></div></div>
+    <div class="card" style="background:var(--sky)"><div class="lab">10/22 · 15:30 – 18:00</div><div class="ttl">마쿠하리 멧세 (치바)</div><div style="font-size:14px;color:var(--muted)">Japan IT Week · 한일 사이버보안 비즈니스 교류회</div><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Makuhari+Messe" target="_blank" rel="noopener">지도</a></div></div>
+    <div class="card" style="background:var(--lilac)"><div class="lab">동문 모임</div><div class="ttl">SKC Japan · Pegasystems</div><div style="font-size:14px;color:var(--muted)">대표님 · 부사장님 동문 재직 회사</div><div class="btns"><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=SKC+Japan+Tokyo" target="_blank" rel="noopener">SKC Japan</a><a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Pegasystems+Tokyo" target="_blank" rel="noopener">Pegasystems</a></div></div>
+  </div>
+
+  <div class="mapbox">
+    <div class="tabs" role="tablist" aria-label="지도 장소 선택" id="maptabs">
+      <button role="tab" aria-selected="true" data-q="Shinjuku Washington Hotel Main, 3-2-9 Nishishinjuku">숙소</button>
+      <button role="tab" aria-selected="false" data-q="TAKANAWA GATEWAY Convention Center">전시장</button>
+      <button role="tab" aria-selected="false" data-q="Otemachi Nomura Building">오테마치 노무라빌딩</button>
+      <button role="tab" aria-selected="false" data-q="Makuhari Messe">마쿠하리 멧세</button>
+    </div>
+    <iframe id="mapframe" title="지도" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=Shinjuku%20Washington%20Hotel%20Main%2C%203-2-9%20Nishishinjuku&z=16&output=embed"></iframe>
+  </div>
+</section>
+
+<!-- 04 부스 -->
+<section id="booth">
+  <div class="sec-h"><span class="n">05</span><h2>소만사 부스</h2><span class="aside">이전 안내의 T116은 B11로 정정되었습니다</span></div>
+  <div class="booth">
+    <div class="big">
+      <div class="k">KISIA｜SOMANSA</div>
+      <div class="v">B11</div>
+      <div class="s">TAKANAWA GATEWAY Convention Center · 바로 옆 B09 GENIANS (한국관)</div>
+    </div>
+    <div class="card">
+      <ul class="chk">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>AI DLP 전시</b> · WebKeeper AI DLP</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>일본어 데모 영상</b> 제작 완료</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>브로셔</b> 일본어 · 영어 구비</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>구디백</b> 믹스커피 · 약과 · 아몬드 세트</div></li>
+      </ul>
+    </div>
+  </div>
+  <figure>
+    <a href="https://storage.googleapis.com/f2ff_public/common/event/2026/SecurityDays/10/pdf/SecurityDays_fall2026_Tokyo_map.jpg" target="_blank" rel="noopener">
+      <img src="https://storage.googleapis.com/f2ff_public/common/event/2026/SecurityDays/10/pdf/SecurityDays_fall2026_Tokyo_map.jpg" alt="Security Days Fall 2026 Tokyo 전시장 배치도" loading="lazy">
+    </a>
+    <figcaption>전시장 배치도 — 이미지를 누르면 원본 크기로 열립니다. 출처: <a href="https://f2ff.jp/event/secd/2026-fall/tokyo/exhibition?lang=en" target="_blank" rel="noopener">Security Days 공식 사이트</a></figcaption>
+  </figure>
+</section>
+
+<!-- 05 도시락 -->
+<section id="lunch">
+  <div class="sec-h"><span class="n">06</span><h2>도시락</h2><span class="aside">부스로 배달 · K-FAIRS 통해 주문 완료</span></div>
+  <div class="bento">
+    <div class="day-b">
+      <h4>10/21 (수)<span>2식</span></h4>
+      <div class="item"><div class="jp">鶏の葱味噌焼きと鶏つくねの海苔弁</div><div class="ko">닭고기 파된장구이 & 닭 쓰쿠네 김도시락</div></div>
+      <div class="item"><div class="jp">甘塩銀鮭の炙り焼きと鶏の唐揚げの海苔弁</div><div class="ko">순한 소금 은연어 구이 & 닭 가라아게 김도시락</div></div>
+    </div>
+    <div class="day-b">
+      <h4>10/22 (목)<span>1식</span></h4>
+      <div class="item"><div class="jp">照り焼きチキンイタリア風</div><div class="ko">이탈리아풍 데리야키 치킨</div></div>
+      <p class="note" style="margin:8px 0 0">1명 부재로 1식만 주문</p>
+    </div>
+    <div class="day-b">
+      <h4>10/23 (금)<span>2식</span></h4>
+      <div class="item"><div class="jp">日向夏ポン酢で食べるとり天と親子そぼろ弁当</div><div class="ko">휴가나쓰 폰즈를 곁들인 닭튀김 & 닭고기·달걀 소보로 도시락</div></div>
+      <div class="item"><div class="jp">北海道産黒牛100％黒牛バーグ弁当</div><div class="ko">홋카이도산 흑우 100% 함박스테이크 도시락</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 경쟁사 -->
+<section id="rivals">
+  <div class="sec-h"><span class="n">07</span><h2>꼭 볼 경쟁사 8곳</h2><span class="aside">전시업체 약 100개사 중 겹치는 곳 30여 곳</span></div>
+  <div class="tbl-box">
+    <table class="tbl comp">
+      <thead><tr><th>제품군</th><th>부스</th><th>업체</th><th>겹치는 소만사 제품 · 포인트</th></tr></thead>
+      <tbody>
+        <tr><td>네트워크</td><td class="strong">B53</td><td>Toshiba Digital Engineering</td><td>AI DLP · Fortra DLP로 생성AI 프롬프트 유출 차단 (2026년 4월 일본 출시)</td></tr>
+        <tr><td>네트워크</td><td class="strong">A03, B02</td><td>Proofpoint Japan</td><td>AI DLP, Mail-i · 메일 DLP + AI Data Security</td></tr>
+        <tr><td>네트워크</td><td class="strong">A06</td><td>Netskope Japan</td><td>AI DLP, WebKeeper, ZTNA · SWG·CASB 기반 생성AI 통제</td></tr>
+        <tr><td>네트워크</td><td class="strong">B18</td><td>Canon IT Solutions</td><td>Mail-i, WebKeeper · 일본 국산 GUARDIANWALL</td></tr>
+        <tr><td>네트워크</td><td class="strong">A10</td><td>BlackBox Japan</td><td>DB-i · 위즈(WEEDS) 일본법인, 데이터 접근 감사</td></tr>
+        <tr><td>네트워크</td><td class="strong">B09</td><td>GENIANS</td><td>ZTNA · 소만사 바로 옆 한국관 부스</td></tr>
+        <tr><td>엔드포인트</td><td class="strong">B35</td><td>CrowdStrike Japan</td><td>Privacy-i AIDR · 제품명까지 같은 Falcon AIDR</td></tr>
+        <tr><td>엔드포인트</td><td class="strong">A07</td><td>MOTEX</td><td>Privacy-i, EDR · 일본 대표 브랜드 LANSCOPE</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="grid2" style="margin-top:12px">
+    <div class="card"><div class="lab">B구역 (소만사와 같은 구역)</div><div style="margin-top:4px"><b>B09</b> GENIANS → <b>B18</b> Canon IT → <b>B35</b> CrowdStrike → <b>B43</b> Encourage → <b>B53</b> Toshiba DE · B01·B02 TECHMATRIX</div></div>
+    <div class="card"><div class="lab">A구역</div><div style="margin-top:4px"><b>A02</b> AhnLab → <b>A06</b> Netskope → <b>A07</b> MOTEX → <b>A10</b> BlackBox → <b>A21</b> Trend Micro · <b>A22</b> Check Point → <b>A24</b> NRI Secure</div></div>
+  </div>
+  <p class="note">한 명은 부스를 지키고, 나머지가 A·B 구역을 나눠 도는 방식을 권합니다. 전체 매핑과 현장 질문 리스트는 경쟁사 맵 문서를 참고하세요.</p>
+</section>
+
+<!-- 08 지급 -->
+<section id="kit">
+  <div class="sec-h"><span class="n">08</span><h2>일괄 지급 물품</h2><span class="aside">출국 전 1인 1세트로 전달드립니다</span></div>
+  <div class="card">
+    <ul class="chk">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>항공 이티켓</b> · 출력본 (여권과 함께 소지)</div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>숙박 확인서</b> · 출력본 (체크인 시 제시)</div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>교통카드</b> · 2,000엔 충전 · JR · 지하철 · 편의점 결제 가능, 잔액은 역 발매기에서 충전</div></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><b>멀티 어댑터</b> · 일본은 100V · 11자형(A타입) 콘센트라 한국 플러그는 어댑터가 필요합니다</div></li>
+    </ul>
+  </div>
+  <p class="note">추가 물품이 정해지면 이곳에 업데이트합니다.</p>
+</section>
+
+<!-- 07 참고 -->
+<section id="notes">
+  <div class="sec-h"><span class="n">09</span><h2>참고 사항</h2></div>
+  <div class="tbl-box">
+    <table class="tbl">
+      <tbody>
+        <tr><td class="strong" style="width:150px">불참 확정 행사</td><td>KISA 1:1 비즈니스 매칭 (10/20 오전) · 찾아가는 수출상담회 (10/21) · KISIA 나이트세션 (10/21 18:20)</td></tr>
+        <tr><td class="strong">10/22 교류회</td><td>일본어로 진행되며 별도 통역은 없습니다. 번역 앱을 준비해 주세요. Japan IT Week 입장 사전등록 완료.</td></tr>
+        <tr><td class="strong">부스 인원</td><td>통역사 없이 운영합니다. 10/21 첫날은 부사장님께서 함께하십니다.</td></tr>
+        <tr><td class="strong">일본어 명함</td><td>대표님 · 부사장님 일본어 명함 준비 완료, 출국 전 전달</td></tr>
+        <tr><td class="strong">수하물 협조</td><td>전시 물품(약 16kg)을 3인이 나누어 갑니다. 1인당 5kg 내외 박스 1개를 캐리어에 담아 주세요.</td></tr>
+        <tr><td class="strong">교통카드</td><td>일괄 지급하는 교통카드(2,000엔 충전) 하나로 JR · 지하철 모두 이용 가능합니다. 잔액이 부족하면 역 발매기에서 충전해 주세요.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- 08 동선 -->
+<section id="routes">
+  <div class="sec-h"><span class="n">10</span><h2>이동 동선</h2><span class="aside">신주쿠 워싱턴 호텔 기준 · 소요시간은 도어투도어 대략치</span></div>
+
+  <div class="route">
+    <h3>숙소 → 시큐리티데이즈 전시장 <span class="tag">10/21 – 23 매일</span></h3>
+    <div class="sum">타카나와 게이트웨이 시티 (TAKANAWA GATEWAY Convention Center) · 약 40분 · 환승 없음</div>
+    <ol class="steps">
+      <li>호텔 → <b>JR 신주쿠역</b> 남쪽 출구 <div class="ln">도보 약 8–10분</div></li>
+      <li><b>JR 야마노테선</b> 시부야 · 시나가와 방면 (외선순환) <div class="ln">약 25분 · 시부야 → 에비스 → 메구로 → 고탄다 → 오사키 → 시나가와 다음 역</div></li>
+      <li><b>다카나와게이트웨이역</b> 하차 → 컨벤션센터 <div class="ln">역 직결 (TAKANAWA GATEWAY CITY)</div></li>
+    </ol>
+    <div class="alt">출근 시간대(08–09시) 야마노테선은 매우 혼잡합니다. 짐이 많은 날은 택시(약 30–40분)도 고려하세요.</div>
+  </div>
+
+  <div class="route">
+    <h3>숙소 → IT위크 전시장 <span class="tag">10/22 교류회</span></h3>
+    <div class="sum">치바 소재 마쿠하리 멧세 · Japan IT Week Autumn · Security Connect Tokyo 2026 · 약 70–80분 · 도쿄역 1회 환승</div>
+    <ol class="steps">
+      <li>호텔 → <b>JR 신주쿠역</b> <div class="ln">도보 약 8–10분</div></li>
+      <li><b>JR 주오선 쾌속</b> 도쿄 방면 → <b>도쿄역</b> <div class="ln">약 15분</div></li>
+      <li>도쿄역 안에서 <b>게이요선 승강장</b>으로 이동 <div class="ln">역 안 도보 10–15분 · 「京葉線」 표지를 따라가세요</div></li>
+      <li><b>JR 게이요선 쾌속</b> 소가(蘇我) 방면 → <b>가이힌마쿠하리역</b> <div class="ln">약 30분</div></li>
+      <li>가이힌마쿠하리역 → 마쿠하리 멧세 <div class="ln">도보 약 5–10분</div></li>
+    </ol>
+    <div class="alt"><b>전시장에서 바로 가는 경우</b> · 다카나와게이트웨이 → 야마노테선 · 게이힌토호쿠선 → 도쿄역 (약 10분) → 게이요선 → 가이힌마쿠하리. 약 60–70분. 15:30 시작이므로 14:15 전후 출발을 권합니다.</div>
+  </div>
+
+  <div class="route">
+    <h3>숙소 → TKP 가든시티 PREMIUM 오테마치 <span class="tag">10/20 세미나 · 시큐리티 나이트</span></h3>
+    <div class="sum">오테마치 노무라빌딩 17층 · 약 25–30분 · 환승 없음</div>
+    <ol class="steps">
+      <li>호텔 → <b>마루노우치선 니시신주쿠역</b> (또는 신주쿠역) <div class="ln">도보 약 7–10분</div></li>
+      <li><b>도쿄메트로 마루노우치선</b> 이케부쿠로 방면 → <b>오테마치역</b> <div class="ln">약 15분</div></li>
+      <li>오테마치역 → 오테마치 노무라빌딩 17층 <div class="ln">역 지하에서 연결 · 도보 약 3–5분</div></li>
+    </ol>
+    <div class="alt"><b>10/20 당일은 하네다에서 바로 이동</b> · 하네다 T3 → 게이큐선 → 시나가와 → JR 야마노테선 · 게이힌토호쿠선 → 도쿄역 (마루노우치 북쪽 출구) → 도보 약 7분. 약 50분. 짐이 있으면 택시(약 30분)가 편합니다. 시큐리티 나이트 장소 핀: <a href="https://maps.app.goo.gl/c6LZd4G2bfV2rQTr6" target="_blank" rel="noopener">지도 열기</a></div>
+  </div>
+
+  <div class="route">
+    <h3>하네다공항 → 시큐리티데이즈 전시장 <span class="tag">10/20 부스 설치</span></h3>
+    <div class="sum">약 30–40분</div>
+    <ol class="steps">
+      <li>하네다 T3 → <b>게이큐 공항선</b> 시나가와 방면 <div class="ln">약 15분</div></li>
+      <li><b>시나가와역</b>에서 JR 야마노테선 · 게이힌토호쿠선 1정거장 <div class="ln">약 2분</div></li>
+      <li><b>다카나와게이트웨이역</b> 하차 → 컨벤션센터 직결</li>
+    </ol>
+  </div>
+
+  <div class="route">
+    <h3>숙소 → 하네다공항 <span class="tag">10/23 대표님 · 10/24 귀국</span></h3>
+    <div class="sum">약 60분 · 출발 2시간 전 공항 도착 (10/23 10:35, 10/24 17:55)</div>
+    <ol class="steps">
+      <li>호텔 → <b>JR 신주쿠역</b> → 야마노테선 → <b>시나가와역</b> <div class="ln">약 30분</div></li>
+      <li><b>게이큐 공항선</b> → <b>하네다공항 제3터미널역</b> <div class="ln">약 15분</div></li>
+    </ol>
+    <div class="alt">신주쿠역 서쪽 출구 리무진버스 · 택시(약 40–60분)도 가능합니다. 금요일 오전은 도로 정체를 감안하세요.</div>
+  </div>
+
+  <div class="callout"><b>확인 필요</b> · 역 이름 · 소요시간은 사전 조사 기준이니 출발 전 Google 지도 길찾기로 한 번 더 확인해 주세요.</div>
+</section>
+
+<footer>
+  소만사 마케팅팀 · 도쿄 출장 가이드 · 2026. 10. 14. 기준 · 사내 공유용 (항공권 번호 · 결제 정보는 포함하지 않았습니다)
+</footer>
+
+</div>
+
+<script>
+(function(){
+  // day tabs
+  var dayTabs = document.querySelectorAll('#schedule .tabs [role="tab"]');
+  dayTabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      dayTabs.forEach(function(b){
+        var on = b === btn;
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+        document.getElementById(b.getAttribute('aria-controls')).hidden = !on;
+      });
+    });
+  });
+  // open today's tab during the trip
+  var d = new Date(), key = (d.getMonth()+1) + '/' + d.getDate();
+  var map = {'10/20':'t20','10/21':'t21','10/22':'t22','10/23':'t23','10/24':'t24'};
+  if (d.getFullYear() === 2026 && map[key]) document.getElementById(map[key]).click();
+
+  // map tabs
+  var frame = document.getElementById('mapframe');
+  var mapTabs = document.querySelectorAll('#maptabs [role="tab"]');
+  mapTabs.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      mapTabs.forEach(function(b){ b.setAttribute('aria-selected', b === btn ? 'true' : 'false'); });
+      frame.src = 'https://maps.google.com/maps?q=' + encodeURIComponent(btn.dataset.q) + '&z=16&output=embed';
+    });
+  });
+})();
+</script>
+</body>
+</html>
